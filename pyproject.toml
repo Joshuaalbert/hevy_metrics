@@ -1,0 +1,25 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hevy_metrics"
+version = "1.0.0"
+description = "Hevy metrics"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache Software License" }
+authors = [{ name = "Joshua G. Albert", email = "albert@strw.leidenuniv.nl" }]
+keywords = ["jax"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent"
+]
+urls = { "Homepage" = "https://github.com/joshuaalbert/hevy_metrics"}
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
